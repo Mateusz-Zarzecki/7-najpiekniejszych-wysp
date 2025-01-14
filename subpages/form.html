@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel=stylesheet type=text/css href="../assets/css/style.css">
+
+</head>
+<body class="form-page">
+    <header>
+        <img src="../assets/img/logo.png" alt=logo class=logo></img>
+        <h1 class=title>Formularz</h1>
+    </header>
+    <div class=middle-part>
+        <nav>
+            <div class=list>
+                <div class="main-pages">
+                    <a href="../index.html"><img src="../assets/img/home.png" alt="domek"></a>
+                    <a href="../subpages/form.html"><img src="../assets/img/google-forms.png" alt="formularz"class="img_palawan"></a>
+                    <a href="../subpages/maps.html"><img src="../assets/img/maps-and-flags.png" alt="mapy i kulura"></a>
+                    <a href="../subpages/gallery.html"><img src="../assets/img/gallery.png" alt="galeria"></a>
+                </div>
+                <div class="island-pages">
+                    <div>
+                        <a href="../subpages/bora_bora.html"><img src="../assets/img/galeria/bora_bora1.jpg" alt="bora bora" class="img_bora_bora"></a>
+                        <a href="../subpages/hawaii.html"><img src="../assets/img/galeria/hawaje1.jpg" alt="hawaje" class="img_hawaje"></a>
+                    </div>    
+                    <div>
+                        <a href="../subpages/iceland.html"><img src="../assets/img/galeria/islandia1.jpg" alt="islandia" class="img_islandia">     </a>   
+                        <a href="../subpages/madeira.html"><img src="../assets/img/galeria/madera1.jpg" alt="madera" class="img_madera">        </a>
+                    </div>    
+                    <div>
+                        <a href="../subpages/mauritius.html"><img src="../assets/img/galeria/mauritius1.jpg" alt="mauritius" class="img_mauritius">   </a>     
+                        <a href="../subpages/new_zealand.html"><img src="../assets/img/galeria/nowa_zelandia1.jpg" alt="nowa_zelandia" class="img_nowa_zelandia">      </a>  
+                    </div>    
+                    <div>
+                        <a href="../subpages/palawan.html"><img src="../assets/img/galeria/palawan1.jpeg" alt="palawan"class="img_palawan">        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            
+        <main>
+            <h2>Wypełnij poniższą ankietę</h2>
+            <form action="mailto:Mateusz.Zarzecki@tm1.edu.pl" method="post">
+                    <label for="favoriteIsland">Która wyspa jest według ciebie najładniejsza?</label>
+                    <select id="favoriteIsland" name="favoriteIsland">
+                        <option value="boraBora">Bora Bora</option>
+                        <option value="islandia">Islandia</option>
+                        <option value="madera">Madera</option>
+                        <option value="mauritius">Mauritius</option>
+                        <option value="nowaZelandia">Nowa Zelandia</option>
+                        <option value="palawan">Palawan</option>
+                    </select>
+                    <br><br>
+                
+                    <label for="culture">Na ile interesuje cię kultura odwiedzanych wysp? (1 - wcale, 5 - bardzo)</label>
+                    <input type="range" id="culture" name="culture" min="1" max="5">
+                    <br><br>
+                
+                    <label for="travel">Kiedy planujesz odwiedzić wybraną wyspę?</label>
+                    <input type="date" id="travel" name="travel">
+                    <br><br>
+                
+                    <fieldset>
+                        <legend>Jakie aktywności preferujesz podczas pobytu na wyspie? (możesz wybrać więcej niż jedną opcję)</legend>
+                        <input type="checkbox" id="snorkeling" name="activities" value="snorkeling">
+                        <label for="snorkeling">Snorkeling</label><br>
+                        <input type="checkbox" id="hiking" name="activities" value="hiking">
+                        <label for="hiking">Wędrówki</label><br>
+                        <input type="checkbox" id="culturalTours" name="activities" value="culturalTours">
+                        <label for="culturalTours">Zwiedzanie kulturalne</label><br>
+                        <input type="checkbox" id="relaxing" name="activities" value="relaxing">
+                        <label for="relaxing">Relaks na plaży</label><br>
+                        <input type="checkbox" id="waterSports" name="activities" value="waterSports">
+                        <label for="waterSports">Sporty wodne</label>
+                    </fieldset>
+                    <br><br>
+                
+                    <label for="additionalComments">Opisz bardziej swoje odczucia co do wybranej wyspy</label><br><br>
+                    <textarea id="additionalComments" name="additionalComments" rows="4" cols="50" placeholder="Wpisz swoje odczucia tutaj..."></textarea>
+                    <br><br>
+                
+                    <input type="submit" value="Wyślij">
+                    <input type="reset" value="Wyczyść">
+                </form>
+                
+            </form>
+        </main>
+        
+    </div>
+
+    <footer>
+        <p class="author">Autor: <b>Mateusz Zarzecki</b> Klasa <b>2tc</b></p>
+        <p class="info">Strona przedstawia 7 najpiękniejszych wysp na świecie według kilku portali i rankingów, m.in:</p>
+        <div class="links">
+            <p class="firstLink"><a href="https://lifestyler.pl/najpiekniejsze-wyspy-swiata/" target="_blank">23 Najpiękniejsze Wyspy Świata, Które Musisz Zobaczyć!</a></p>
+            <p class="secondLink"><a href=https://www.wakacyjnipiraci.pl/motywy/najpiekniejsze-wyspy-na-swiecie target="_blank">Najpiękniejsze wyspy na świecie - to prawdziwy raj na Ziemi</a></p>
+        </div>
+        
+    </footer>
+</body>
+</html>
